@@ -65,11 +65,15 @@
 <h2>Running the demonstration<a class="headerlink" href="#running-the-demonstration" title="Permalink to this headline">¶</a></h2>
 <p>In order to download the program and run its demonstration, use the following commands:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">reof</span><span class="o">-</span><span class="n">mas</span><span class="o">/</span><span class="n">reof</span><span class="o">-</span><span class="n">mas</span><span class="o">-</span><span class="n">src</span><span class="o">.</span><span class="n">git</span>
-<span class="n">cd</span> <span class="n">reof</span><span class="o">-</span><span class="n">mas</span><span class="o">-</span><span class="n">src</span><span class="o">/</span><span class="n">py_env</span><span class="o">/</span>
-<span class="o">.</span> <span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
-<span class="n">cd</span> <span class="o">..</span>
-<span class="o">./</span><span class="n">run_all</span>
+<span class="n">cd</span> <span class="n">reof</span><span class="o">-</span><span class="n">mas</span><span class="o">-</span><span class="n">src</span><span class="o">/</span>
+<span class="n">pyvenv</span><span class="o">-</span><span class="mf">3.5</span> <span class="n">py_env</span>
+<span class="o">.</span> <span class="n">py_env</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+<span class="n">pip3</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+<span class="n">cd</span> <span class="n">py_env</span><span class="o">/</span><span class="n">src</span>
+<span class="n">python</span> <span class="n">melodic_chains</span><span class="o">.</span><span class="n">py</span>
 <span class="n">deactivate</span>
+<span class="n">cd</span> <span class="n">outputs</span>
+<span class="nb">open</span> <span class="o">*</span>
 </pre></div>
 </div>
 </div>
