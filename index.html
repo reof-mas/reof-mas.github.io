@@ -77,17 +77,21 @@
 <h2>Generating artifacts<a class="headerlink" href="#generating-artifacts" title="Permalink to this headline">¶</a></h2>
 <p>We treat all possible notes as an alphabet, which allows us to use Markov chains for generating sequences of notes, a composition. Currently, we opted to using a second order Markov chain. The problem of the first order is that the artifacts may sound too random. On the other hand, if we were to choose an order at least three, our system will start plagiarize too much the compositions in the corpus used for constructing the Markov chains. (TODO: more content)</p>
 </div>
-<div class="section" id="agent-overview">
-<h2>Agent overview<a class="headerlink" href="#agent-overview" title="Permalink to this headline">¶</a></h2>
-<p>Add text</p>
-</div>
 <div class="section" id="source-code-layout">
 <h2>Source code layout<a class="headerlink" href="#source-code-layout" title="Permalink to this headline">¶</a></h2>
+<p>(All the files are in the directory <code class="docutils literal"><span class="pre">py_env/src</span></code> of our repository.)</p>
 <ul class="simple">
 <li><code class="docutils literal"><span class="pre">composer.py</span></code> - implements the actual agent responsible for generating artifacts, computing the value and novelty of each artifact, and finally reporting the best one to the environment.</li>
 <li><code class="docutils literal"><span class="pre">list_memory.py</span></code> - a FIFO (first in, first out) queue for holding at most <code class="docutils literal"><span class="pre">c</span></code> artifacts, where <code class="docutils literal"><span class="pre">c</span></code> is the maximum allowed capacity of the memory queue.</li>
-<li><code class="docutils literal"><span class="pre">markov_chain.py</span></code> - implements the actual Markov chain...</li>
+<li><code class="docutils literal"><span class="pre">markov_chain.py</span></code> - implements the actual Markov chain. The actual algorithm returns absolute transitions counts, yet the function <code class="docutils literal"><span class="pre">get_transition_probs_for_state</span></code> can convert those to actual transition probabilities. Also, we chose to reinforce the sequences generated from the Markov chain by adding those sequences to the Markov chain itself, thus reinforcing &#8220;good&#8221; compositions.</li>
+<li><code class="docutils literal"><span class="pre">melodic_chains.py</span></code> - contains the actual entry point to our CC software.</li>
+<li><code class="docutils literal"><span class="pre">music_environment.py</span></code> - subclasses the environment from Creamas providing the voting function required by Creamas.</li>
+<li><code class="docutils literal"><span class="pre">utility.py</span></code> - contains miscellaneous utility functions.</li>
 </ul>
+</div>
+<div class="section" id="agent-overview">
+<h2>Agent overview<a class="headerlink" href="#agent-overview" title="Permalink to this headline">¶</a></h2>
+<p>Add text</p>
 </div>
 <div class="section" id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
