@@ -99,12 +99,20 @@ Terminology
 
 - **Motif** A short succession of notes that is the smallest analyzable element or phrase within a theme. [2]
 
+- **Inversion** the inverted form of a motif or theme, in which every ascending movement in the motif is transformed into a equally great descending movement and vice-versa. Check [3]
+
+- **Retrograde** the retrograde form of a motif or theme, in which the last note of the motif/theme becomes the first, the second last becomes the second, etc. Check [4]
+
+- **Transposition** refers to the process of moving a collection of notes up or down in pitch by a constant interval [5]
 
 References
 ==========
 
-- [1] https://en.wikipedia.org/wiki/Subject_(music) Retreived 1 Dec 2016, 14:53
-- [2] https://en.wikipedia.org/wiki/Motif_(music) Retreived 1 Dec 2016, 14:54
+- [1] https://en.wikipedia.org/wiki/Subject_(music) Retrieved 1 Dec 2016, 14:53
+- [2] https://en.wikipedia.org/wiki/Motif_(music) Retrieved 1 Dec 2016, 14:54
+- [3] https://en.wikipedia.org/wiki/Inversion_(music) Retrieved 13 Dec 2016, 16:57
+- [4] https://en.wikipedia.org/wiki/Retrograde_(music) Retrieved 13 Dec 2016, 16:59
+- [5] https://en.wikipedia.org/wiki/Transposition_(music) Retrieved 13 Dec 2016, 16:59
 
 
 
