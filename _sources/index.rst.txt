@@ -64,7 +64,7 @@ In order to download the program and run its demonstration, use the following co
         cd py_env/src
         python melodic_chains.py
 
-After this there should be generated artefacts in py_env/src/outputs. Vote winner themes are named artefact_[id].mid and the created song is called the_song.mid.
+After this there should be generated artefacts in py_env/src/outputs. Vote winner themes are named artefact_[id].mid and the created song is called the_song.mid. You migth need to install soundfonts for the midis to work, because of the different instruments. On linux you can install the fluid-soundfont-gm package.
 
 
 Agent overview
